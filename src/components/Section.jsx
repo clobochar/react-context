@@ -2,6 +2,8 @@ import React, {useContext, useEffect} from "react";
 
 import DataContext from "./DataContext";
 
+import "./Section.css"
+
 function Section() {
     const {user, setUser} =  useContext(DataContext)
 
@@ -17,8 +19,8 @@ function Section() {
               return (
                 <div className="card">
                     <h1>{person.name}</h1>
-                    <p>{person.email}</p>
-                    <p>{person.phone}</p>
+                    <p>Email: {person.email}</p>
+                    <p>Phone: {person.phone}</p>
                 </div>
               )
             })}

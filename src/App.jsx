@@ -12,7 +12,6 @@ function App() {
   return (
     <DataContext.Provider value={{ user, setUser}}>
       <div className="App">
-        <h1>Hello</h1>
       <Section/>
     </div>
     </DataContext.Provider>
